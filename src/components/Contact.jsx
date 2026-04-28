@@ -14,10 +14,8 @@ export default function Contact() {
     if (!form.name || !form.email || !form.message) return;
     setStatus("sending");
 
-    // Replace this URL with your EmailJS / Formspree / custom API endpoint
-    // Example with Formspree: https://formspree.io/f/YOUR_ID
     try {
-      const res = await fetch("https://formspree.io/f/YOUR_FORM_ID", {
+      const res = await fetch("https://formspree.io/f/mojyobbw", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
